@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscription Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Subscription Management System</h1>
+  </header>
+
+  <main>
+    <section id="create-subscription">
+      <h2>Create New Subscription</h2>
+      <form id="subscriptionForm">
+        <label>Plan Name:</label>
+        <input type="text" id="planName" placeholder="e.g. Premium Plan" required />
+
+        <label>Price (₹):</label>
+        <input type="number" id="price" required />
+
+        <label>Duration (in months):</label>
+        <input type="number" id="duration" required />
+
+        <label>Payment Method:</label>
+        <select id="paymentMethod" required>
+          <option value="Card">Credit/Debit Card</option>
+          <option value="UPI">UPI</option>
+          <option value="PayPal">PayPal</option>
+        </select>
+
+        <button type="submit">Create Subscription</button>
+      </form>
+    </section>
+
+    <section id="subscriptions">
+      <h2>Your Subscriptions</h2>
+      <div id="subscriptionList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Subscription Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
